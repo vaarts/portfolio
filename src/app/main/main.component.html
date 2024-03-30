@@ -1,0 +1,128 @@
+<app-header></app-header>
+<section class="hero">
+    <div class="container">
+        <h1 class="title">Java & Angular Full Stack Developer</h1>
+        <h2 class="subtitle">I design and code beautifully simple things, and I love what I do.</h2>
+        <img class="avatar" src="/assets/avatar.png">
+
+    </div>
+    <div class="footer">
+        <img class="setup" src="/assets/setup.jpeg">
+    </div>
+</section>
+<section class="about">
+    <div class="info">
+        <h1 class="title">Hi, I’m Vipul. Nice to meet you.</h1>
+        <h2 class="subtitle"> With over 2 years of hands-on experience, I specialize in Java and Angular technologies,
+            seamlessly bridging the gap between backend and frontend development. In my journey as a software engineer,
+            I've had the privilege of working on diverse projects, from conceptualization to deployment. What drives me
+            is the opportunity to solve complex problems and innovate with technology.</h2>
+    </div>
+</section>
+<section class="skills-section">
+    <div class="content">
+        <div class="card">
+            <h1 class="title">Backend Developer</h1>
+            <p>I specialize in crafting efficient and reliable server-side applications that form the backbone of modern
+                software solutions.</p>
+            <p class="list-title">Programming Languages:</p>
+            <p>Java, C++, Javascript, Git</p>
+            <p class="list-title">Dev Tools:</p>
+            <ul>
+                <li>Spring Boot</li>
+                <li>Maven</li>
+                <li>Pivotal Cloud Foundry (PCF)</li>
+                <li>Github</li>
+                <li>Postman</li>
+                <li>Cassandra</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h1 class="title">Frontend Developer</h1>
+            <p>I specialize in translating concepts and designs into pixel-perfect, interactive interfaces that engage
+                and delight users.</p>
+            <p class="list-title">Languages:</p>
+            <p>HTML, CSS, Typescript</p>
+            <p class="list-title">Dev Tools:</p>
+            <ul>
+                <li>VSCode</li>
+                <li>Angular</li>
+                <li>Bootstrap</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="experience">
+    <div class="title">Professional Experience</div>
+    <mat-card class="details" (click)="openPanel1()">
+        <div class="sub-title">
+            <div class="position">
+                <span class="role">Senior Software Engineer @ Mphasis Limited</span>
+                <span class="year">Jun 2023 - Present</span>
+            </div>
+            <div class="icon">
+                <mat-icon>{{panelOpenState1 ? 'remove' : 'add'}}</mat-icon>
+            </div>
+        </div>
+    </mat-card>
+    <mat-card class="description" *ngIf="panelOpenState1">
+        <div class="location">
+            <span><mat-icon style="font-size: 20px; vertical-align: middle;"> location_on</mat-icon>Bengaluru,
+                Karnataka, India</span>
+            <span style="margin-left: 50px;"><a style="text-decoration: none; color: white;"
+                    href="https://www.mphasis.com/home.html"><mat-icon
+                        style="font-size: 20px; vertical-align: middle;">open_in_new</mat-icon>mphasis.com</a></span>
+        </div>
+        <hr>
+        <div class="work">
+            <div>
+                <p>Developing a back-end project using Java, along with ActiveMQ, forms the backbone of the backend
+                    infrastructure responsible for handling messaging and processing data asynchronously.</p>
+                <p>Developing a frontend project using Angular and fetching data from microservices through REST APIs
+                    involves a structured process to ensure seamless integration and efficient data retrieval. </p>
+            </div>
+            <img class="logo" src="/assets/mphasislogo.png">
+        </div>
+        <div class="tools" >
+            <div *ngFor="let  tool of tools1"> 
+                <div class="tool">{{tool}}</div></div>
+        </div> 
+    </mat-card>
+    <mat-card class="details" (click)="openPanel2()">
+        <div class="sub-title">
+            <div class="position">
+                <span class="role">Software Engineer @ Mphasis Limited</span>
+                <span class="year">Jun 2021 - Jun 2023</span>
+            </div>
+            <div class="icon">
+                <mat-icon>{{panelOpenState2 ?'remove' : 'add'}}</mat-icon>
+            </div>
+        </div>
+    </mat-card>
+    <mat-card class="description" *ngIf="panelOpenState2">
+        <div class="location">
+            <span><mat-icon style="font-size: 20px; vertical-align: middle;"> location_on</mat-icon>Bengaluru,
+                Karnataka, India</span>
+            <span style="margin-left: 50px;"><a style="text-decoration: none; color: white;"
+                    href="https://www.mphasis.com/home.html"><mat-icon
+                        style="font-size: 20px; vertical-align: middle;">open_in_new</mat-icon>mphasis.com</a></span>
+        </div>
+        <hr>
+        <div class="work">
+            <div>
+                <p>
+                    Developed a backend project exposing RESTful APIs involves creating a robust and scalable system
+                    that allows clients to interact with the server using HTTP requests.
+                </p>
+
+            </div>
+
+            <img class="logo" src="/assets/mphasislogo.png">
+        </div>
+        <div class="tools" >
+            <div *ngFor="let  tool of tools2"> 
+                <div class="tool">{{tool}}</div></div>
+        </div> 
+    </mat-card>
+</section>
+<app-footer></app-footer>

@@ -1,0 +1,54 @@
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px 0px 100px;
+  }
+  
+  .title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #9a6eea;
+  }
+
+  .about{
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .resume{
+    color: #9a6eea;
+    text-decoration: none;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 10px 20px;
+  }
+
+  .resume:hover{
+    color: white;
+    background-color: #9a6eea;
+
+  }
+
+  .contact{
+    margin-left: 30px;
+    font-size: large;
+    text-decoration: none;
+    color: #9a6eea;
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .contact:hover{
+    color: white;
+    background-color: #9a6eea;
+
+  }
